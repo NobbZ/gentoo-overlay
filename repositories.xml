@@ -1,0 +1,15 @@
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>NobbZ</name>
+    <description lang="en">My private repository</description>
+    <homepage>https://github.com/NobbZ/gentoo-overlay</homepage>
+    <owner type="person">
+      <email>timmelzer@gmail.com</email>
+      <name>Norbert Melzer</name>
+    </owner>
+    <source type="git">https://github.com/NobbZ/gentoo-overlay.git</source>
+    <source type="git">git://github.com/NobbZ/gentoo-overlay.git</source>
+    <source type="git">git@github.com:NobbZ/gentoo-overlay.git</source>
+    <feed>https://github.com/NobbZ/gentoo-overlay/commits/master.atom</feed>
+  </repo>
+</repositories>
