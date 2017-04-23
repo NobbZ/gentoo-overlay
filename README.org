@@ -1,0 +1,17 @@
+#+AUTHOR: Norbert Melzer
+#+TITLE: NobbZ Gentoo Overlay
+
+* Installation
+
+Add
+~https://github.com/NobbZ/gentoo-overlay/raw/master/repositories.xml~
+to the list of overlays in ~/etc/layman/layman.cfg~ eg:
+
+#+BEGIN_EXAMPLE
+overlays  :
+    https://api.gentoo.org/overlays/repositories.xml
+    https://github.com/NobbZ/gentoo-overlay/raw/master/repositories.xml
+#+END_EXAMPLE
+
+From then on, you can use ~(sudo) layman -a NobbZ~ to add my overlay
+to your system.
