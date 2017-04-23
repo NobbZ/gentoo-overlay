@@ -3,6 +3,8 @@
 
 * Installation
 
+** Permanent
+
 Add
 ~https://github.com/NobbZ/gentoo-overlay/raw/master/repositories.xml~
 to the list of overlays in ~/etc/layman/layman.cfg~ eg:
