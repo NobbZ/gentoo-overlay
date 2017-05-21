@@ -5,15 +5,13 @@
 
 ** Permanent
 
-Add
-~https://github.com/NobbZ/gentoo-overlay/raw/master/repositories.xml~
-to the list of overlays in ~/etc/layman/layman.cfg~ eg:
+Search for the config key ~overlay_defs~ in your ~/etc/layman/layman.cfg~ and
+change uncomment it. Please note down the path that was given there (usually
+~/etc/layman/overlays~).
 
-#+BEGIN_EXAMPLE
-overlays  :
-    https://api.gentoo.org/overlays/repositories.xml
-    https://github.com/NobbZ/gentoo-overlay/raw/master/repositories.xml
-#+END_EXAMPLE
+#+BEGIN_SRC shell-script
+  curl https://github.com/NobbZ/gentoo-overlay/raw/master/repositories.xml > /etc/layman/overlays/nobbz.xml
+#+END_SRC
 
 From then on, you can use ~(sudo) layman -a NobbZ~ to add my overlay
 to your system.
