@@ -18,17 +18,19 @@ inherit golang-build
 
 src_compile() {
 	ego_pn_check
+	einfo "Building exercism"
 	set -- env GOPATH="${S}:$(get_golibdir_gopath)" \
-		go build -v -work -x ${EGO_BUILD_FLAGS} "${EGO_PN}/exercism"
+		go build -work -x ${EGO_BUILD_FLAGS} "${EGO_PN}/exercism"
 	echo "$@"
 	"$@" || die
 }
 
 src_install() {
 	ego_pn_check
+	einfo "Creating binary file"
 	set -- env GOPATH="${S}:$(get_golibdir_gopath)" \
-		go install -v -work -x "${EGO_PN}/exercism"
+		go install -work -x "${EGO_PN}/exercism"
 	echo "$@"
 	"$@" || die
-	golang_install_pkgs
+	newbin "${S}/bin/exercism" exercism
 }
