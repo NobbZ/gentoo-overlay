@@ -17,18 +17,18 @@ inherit golang-vcs-snapshot
 inherit golang-build
 
 src_compile() {
-    ego_pn_check
-    set -- env GOPATH="${S}:$(get_golibdir_gopath)" \
-        go build -v -work -x ${EGO_BUILD_FLAGS} "${EGO_PN}/exercism"
-    echo "$@"
-    "$@" || die
+	ego_pn_check
+	set -- env GOPATH="${S}:$(get_golibdir_gopath)" \
+		go build -v -work -x ${EGO_BUILD_FLAGS} "${EGO_PN}/exercism"
+	echo "$@"
+	"$@" || die
 }
 
 src_install() {
-    ego_pn_check
-    set -- env GOPATH="${S}:$(get_golibdir_gopath)" \
-        go install -v -work -x "${EGO_PN}/exercism"
-    echo "$@"
-    "$@" || die
-    golang_install_pkgs
+	ego_pn_check
+	set -- env GOPATH="${S}:$(get_golibdir_gopath)" \
+		go install -v -work -x "${EGO_PN}/exercism"
+	echo "$@"
+	"$@" || die
+	golang_install_pkgs
 }
