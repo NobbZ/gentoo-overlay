@@ -12,7 +12,7 @@ SRC_URI="https://github.com/erlang/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 DESCRIPTION="Erlang build tool."
 HOMEPAGE="http://www.rebar3.org/"
 
-DEPENDS=">=dev-lang/erlang-18.0"
+DEPEND=">=dev-lang/erlang-18.0"
 
 src_unpack() {
 	unpack ${A}
