@@ -19,7 +19,7 @@ src_unpack() {
 }
 
 src_compile() {
-	./bootstrap
+	./bootstrap || die "Couldn't compile rebar3"
 }
 
 src_install() {
