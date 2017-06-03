@@ -11,11 +11,13 @@ LICENSE="MIT"
 SLOT="0"
 
 IUSE="
+	xclojure
 	xcpp
 	xerlang
 "
 
 PDEPEND="
+	xclojure? ( dev-java/leiningen-bin )
 	xcpp? ( sys-devel/gcc dev-util/cmake >=dev-libs/boost-1.59.0 )
 	xerlang? ( dev-lang/erlang dev-util/rebar3 )
 "

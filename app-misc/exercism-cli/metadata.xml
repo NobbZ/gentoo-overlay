@@ -6,6 +6,7 @@
     <name>Norbert Melzer</name>
   </maintainer>
   <use>
+    <flag name="xclojure">Install support for the Clojure language track</flag>
     <flag name="xcpp">Install support for the C++ language track</flag>
     <flag name="xerlang">Isntall support for the Erlang language track</flag>
   </use>
