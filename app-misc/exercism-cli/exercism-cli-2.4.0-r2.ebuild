@@ -10,6 +10,16 @@ SRC_URI="https://${EGO_PN}/archive/${EGIT_COMMIT}.tar.gz -> ${P}.tar.gz"
 LICENSE="MIT"
 SLOT="0"
 
+IUSE="
+	xcpp
+	xerlang
+"
+
+PDEPEND="
+	xcpp? ( sys-devel/gcc dev-util/cmake >=dev-libs/boost-1.59.0 )
+	xerlang? ( dev-lang/erlang dev-util/rebar3 )
+"
+
 DESCRIPTION="Command-Line-Tool for the exercism.io website."
 HOMEPAGE="http://exercism.io/"
 

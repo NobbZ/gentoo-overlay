@@ -5,4 +5,8 @@
     <email>timmelzer@gmail.com</email>
     <name>Norbert Melzer</name>
   </maintainer>
+  <use>
+    <flag name="xcpp">Install support for the C++ language track</flag>
+    <flag name="xerlang">Isntall support for the Erlang language track</flag>
+  </use>
 </pkgmetadata>
