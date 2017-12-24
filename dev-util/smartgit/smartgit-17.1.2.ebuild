@@ -15,7 +15,7 @@ LICENSE="smartgit free-noncomm MIT EPL-1.0 Apache-2.0 LGPL-2.1"
 
 # slot number is based on the upstream slotting mechanism which creates a new subdir
 # in `~/.smartgit` for each new major release. The subdir name corresponds with SLOT.
-SLOT="8"
+SLOT="17"
 PN_SLOTTED="${PN}${SLOT}"
 # upstream use these types of download uris so far:
 # 	https://www.syntevo.com/static/smart/download/smartgit/smartgit-linux-8_0_1.tar.gz
