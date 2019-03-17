@@ -1,6 +1,10 @@
 #+AUTHOR: Norbert Melzer
 #+TITLE: NobbZ Gentoo Overlay
 
+* Deprecation warning!
+
+*this repository is not maintained anymore. I used it years back when I still was using Funtoo-Linux. In the meanwhile I've switched to Arch linux and have a much better experience and do not have to wait minutes just for dependency resolution and hours for compilation.*
+
 * Installation
 
 ** Permanent
